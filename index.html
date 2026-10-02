@@ -1,0 +1,78 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#315b42">
+  <meta name="description" content="A visual, bilingual English and Telugu nutrition counselling flip-chart for Tribal Anganwadis, mothers and caregivers.">
+  <title>Nutritional Counselling Flip-Chart | Tribal Anganwadis</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="brand-mark" aria-hidden="true">🌿</div>
+    <div class="brand-copy">
+      <p class="eyebrow">COMMUNITY SERVICE PROJECT</p>
+      <h1>Nutritional Counselling Flip-Chart</h1>
+      <p class="subtitle">For Tribal Anganwadis · Mothers, children & caregivers</p>
+    </div>
+    <div class="header-actions">
+      <button id="languageToggle" class="secondary-btn" type="button" aria-pressed="false">తెలుగు చూపించు</button>
+      <button id="printBtn" class="secondary-btn" type="button">🖨 Print</button>
+    </div>
+  </header>
+
+  <main class="wrap">
+    <section class="intro panel">
+      <div>
+        <span class="pill">10 visual pages</span>
+        <h2>Healthy Mother <span>•</span> Healthy Child <span>•</span> Healthy Community</h2>
+        <p>Use this flip-chart as a conversation guide. Show one page at a time, ask the mother what is possible at home, and adapt advice to local foods and the family's needs.</p>
+      </div>
+      <div class="intro-art" aria-hidden="true"><span>👩🏽‍🍼</span><span>🥬</span><span>🌾</span><span>🍌</span></div>
+    </section>
+
+    <section class="viewer" aria-label="Flip-chart viewer">
+      <div class="progress-row">
+        <span id="pageCounter">Page 1 of 10</span>
+        <div class="progress-track" aria-label="Progress"><div id="progressFill"></div></div>
+        <span id="pageLabel">Welcome</span>
+      </div>
+      <article id="slide" class="slide" aria-live="polite">
+        <div class="slide-content">
+          <p class="slide-kicker">WELCOME</p>
+          <h2>Nutritional Counselling Kiosk</h2>
+          <p class="telugu-text">గిరిజన అంగన్‌వాడీల కోసం పోషకాహార సలహా</p>
+          <p class="lead">Healthy food • Healthy mother • Healthy child</p>
+          <div class="hero-illustration" aria-hidden="true">
+            <div class="sun"></div>
+            <div class="food-bowl">🥗</div>
+            <div class="mother-child">👩🏽‍🍼</div>
+            <div class="leaf leaf-one">🌿</div><div class="leaf leaf-two">🌱</div>
+          </div>
+          <p class="bottom-note">A friendly guide for Anganwadi Workers, mothers and caregivers.</p>
+        </div>
+      </article>
+      <div class="controls">
+        <button id="prevBtn" class="nav-btn" type="button" disabled>← Previous</button>
+        <div class="dots" id="dots" aria-label="Choose a page"></div>
+        <button id="nextBtn" class="nav-btn primary" type="button">Next →</button>
+      </div>
+      <p class="keyboard-hint">Tip: use ← and → arrow keys to change pages. Choose “Print” to print the full flip-chart.</p>
+    </section>
+
+    <section class="how-to panel">
+      <h2>How to use this flip-chart</h2>
+      <div class="how-grid">
+        <div><span>1</span><h3>Show</h3><p>Show one illustrated page at a time.</p></div>
+        <div><span>2</span><h3>Ask</h3><p>Ask what foods and services are available locally.</p></div>
+        <div><span>3</span><h3>Discuss</h3><p>Agree on one realistic action with the caregiver.</p></div>
+      </div>
+      <p class="disclaimer">Educational awareness only. For individual health concerns, feeding difficulties, pregnancy advice or a child's growth concerns, contact the Anganwadi Worker or qualified health professional. Confirm local scheme details with official local sources.</p>
+    </section>
+  </main>
+
+  <footer class="site-footer">Nutritional Counselling Kiosk for Tribal Anganwadis <span>·</span> Community Service Project</footer>
+  <script src="script.js"></script>
+</body>
+</html>
